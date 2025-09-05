@@ -25,7 +25,14 @@ public class Trainer {
     }
 
     private static void train(Bird bird) {
-        Duck d = (Duck) bird;
-        d.swim();
+//        Duck d = (Duck) bird;
+//        d.swim();
+        if (bird instanceof Duck) {
+            Duck d = (Duck) bird;
+            d.swim();
+        }
+        else {
+            System.out.println("dont print");
+        }
     }
 }
